@@ -21,7 +21,7 @@ const Footer = () => {
                   <h3>Our Services</h3>
                   <ul>
                     <li>Mobile Development</li>
-                    <li>Web App Development</li>
+                    <li>WebApp Development</li>
                     <li>Theme Development</li>
                     <li>SEO</li>
                   </ul>
