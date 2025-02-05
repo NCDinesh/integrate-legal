@@ -5,15 +5,15 @@ const NavigationLink = (props) => {
     const { menuItems, activeLink, handleLinkClick } = props;
   return (
     <div>
-      <ul>
+      <ul className="flex gap-16 justify-center min-w-[48vw] truncate font-bold cursor-pointer">
         {menuItems.map((item, index) => (
-          <li key={index}>
+          <li key={index} className="text-xl font-semibold text-white hover:text-[#FF0000] ease">
             <Link to={item.path} onClick={() => handleLinkClick(item.name)}>
               <span
                 className={`${
                   activeLink === item.name
-                    ? "underline decoration-red-500 underline-offset-[5px]"
-                    : "hover:no-underline hover:border-b-2 hover:border-red-500"
+                    ? "text-[#FF0000]"
+                    : ""
                 } transition-all`}
               >
                 {item.label}
